@@ -9,7 +9,7 @@
 
 facebook:
   name: "Facebook"
-  urlTemplate: "https://www.facebook.com/{value}"
+  urlTemplate: "https://www.facebook.com/and4yy"
   icon: "fab fa-facebook"
 
 github:
@@ -19,7 +19,7 @@ github:
 
 twitter:
   name: "Twitter"
-  urlTemplate: "https://twitter.com/{value}"
+  urlTemplate: "https://twitter.com/and4yy"
   icon: "fab fa-twitter"
 
 reddit:
