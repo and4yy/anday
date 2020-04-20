@@ -66,10 +66,10 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
+# rss: no
   email: "anday@mail.com"
   facebook: And4yy
-  github: #
+# github: #
   twitter: And4yy
 #  reddit: yourname
 #  linkedin: 
@@ -78,7 +78,7 @@ social-network-links:
   instagram: And4yy 
 #  youtube: user/
 #  spotify: yourname
-#  telephone: +14159998888
+  telephone: +14159998888
 #  steam: 
 #  twitch: yourname
 #  yelp: yourname
@@ -91,7 +91,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "anday.xyz"  # eg. "anday"
 
 # --- Web Statistics Section --- #
 
