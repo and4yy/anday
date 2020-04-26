@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#212529">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    <link rel="icon" href="images/icon-4.png">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="manifest" href="/manifest.json">
+    <title>Roadha App</title>
+	<style>
+@charset "utf-8";
+@font-face {
+  font-family:MV_Waheed;
+  font-style: normal;
+  font-weight: normal;
+  src: url("css/MV_Waheed.otf") format("opentype");
+}
+body {
+  font-family:MV_Waheed;
+  padding:0px;
+  margin:0px;
+}
+td {
+    padding:1px 10px;
+}
+.select2-input,.select2-result-label {
+  font-family:MV_Waheed;
+  font-size:12pt;
+  direction:rtl;
+  text-align:right;
+  padding:3px;
+}
+.select2-chosen {
+  font-family:MV_Waheed;
+  font-size:12pt;
+  direction:rtl;
+  text-align:right;
+  padding:0px;
+}
+.select2-results {
+  font-family:MV_Waheed;
+  font-size:12pt;
+  height:150px;
+  direction:rtl;
+  padding:3px;
+}
+.select2-search input {
+       font-family:MV_Waheed;
+}
+</style>
+</head>
+
+    <div>
+        <nav class="navbar navbar-dark bg-dark navbar-toggleable-md">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">އިމްސާކް </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li><a class="navbar-item" href="Qruan/index.html"> ޤުރުޢާން </a></li>
+                        <li><a class="navbar-item" href="#">about</a></li>    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1 class="text-center mt-2" style="color: #000">ނަމާދު ވަގުތު</h1><h1 class="text-center mt-1" style="color: #FFF" align="rtl"></h1>
+                <h1 id="cDay" class="text-center" style="color: #000"></h1>
+         
+                               
+
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="searchData" class="modal-content">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+<body>
+ 
+<div style="padding:10px;">
+  <table width="100%"><tr><td colspan="2" style="padding:0px">  <select type="text" id="location" style="margin:0px; padding:3px; width:100%;" onChange="document.location='?iid='+$(this).val()">
+    <option value="5">ހއ. ވަށަފަރު</option><option value="6">ހއ. ހޯރަފުށި</option><option value="13">ހއ. އުލިގަމު</option><option value="15">ހއ. އުތީމު</option><option value="17">ހއ. ބެރިންމަދޫ</option><option value="20">ހއ. ކެލާ</option><option value="21">ހއ. ދިއްދޫ</option><option value="24">ހއ. މާރަންދޫ</option><option value="25">ހއ. މުރައިދޫ</option><option value="30">ހއ. މުޅަދޫ</option><option value="31">ހއ. އިހަވަންދޫ</option><option value="33">ހއ. ތުރާކުނު</option><option value="35">ހއ. ތަކަންދޫ</option><option value="36">ހއ. ބާރަށް</option><option value="37">ހއ. ފިއްލަދޫ</option><option value="43">ހއ. ހަތިފުށި</option><option value="46">ހދ. ކުޅުދުއްފުށި</option><option value="48">ހދ. ހިރިމަރަދޫ</option><option value="49">ހދ. ހަނިމާދޫ</option><option value="54">ހދ. ވައިކަރަދޫ</option><option value="55">ހދ. ނޮޅިވަރަންފަރު</option><option value="56">ހދ. ފިނޭ</option><option value="59">ހދ. ކުމުންދޫ</option><option value="60">ހދ. ނޮޅިވަރަމް</option><option value="62">ހދ. ނޭކުރެންދޫ</option><option value="63">ހދ. ނެއްލައިދޫ</option><option value="64">ހދ. މަކުނުދޫ</option><option value="65">ހދ. މާވައިދޫ</option><option value="66">ހދ. ނައިވާދޫ</option><option value="67">ހދ. ކުރިނބި</option><option value="70">ހދ. ހޮނޑައިދޫ</option><option value="72">ހދ. ފަރިދޫ</option><option value="73">ހދ. ކުނބުރުދޫ</option><option value="78">ށ. މާއުނގޫދޫ</option><option value="79">ށ. ފިރުނބައިދޫ</option><option value="83">ށ. މާކަނޑޫދޫ</option><option value="94">ށ. ފަރުކޮޅު</option><option value="103">ށ. ނަރުދޫ</option><option value="106">ށ. ފޯކައިދޫ</option><option value="112">ށ. ގޮއިދޫ</option><option value="114">ށ. ފުނަދޫ</option><option value="119">ށ. ޅައިމަގު</option><option value="120">ށ. ނޫމަރާ</option><option value="121">ށ. ކޮމަންޑޫ</option><option value="122">ށ. ބިލެތްފަހި</option><option value="123">ށ. ކަނޑިތީމު</option><option value="124">ށ. ފޭދޫ</option><option value="125">ށ. މަރޮށި</option><option value="126">ށ. ފީވައް</option><option value="140">ނ. ލަންދޫ</option><option value="141">ނ. މާޅެންދޫ</option><option value="149">ނ. ފޮއްދޫ</option><option value="152">ނ. ކުޑަފަރި</option><option value="153">ނ. މަނަދޫ</option><option value="157">ނ. ހޮޅުދޫ</option><option value="159">ނ. ވެލިދޫ</option><option value="160">ނ. ޅޮހި</option><option value="163">ނ. މާފަރު</option><option value="170">ނ. ތޮޅެންދޫ</option><option value="180">ނ. ކެނދިކުޅުދޫ</option><option value="184">ނ. މަގޫދޫ</option><option value="186">ނ. ހެނބަދޫ</option><option value="194">ނ. މިލަދޫ</option><option value="208">ރ. އުނގުލު</option><option value="212">ރ. ގާއުނޑޫދޫ</option><option value="221">ރ. ރަސްގެތީމު</option><option value="222">ރ. މާކުރަތު</option><option value="223">ރ. ކިނޮޅަސް</option><option value="229">ރ. އަނގޮޅިތީމު</option><option value="242">ރ. ރަސްމާދޫ</option><option value="251">ރ. އިންނަމާދޫ</option><option value="252">ރ. މަޑުއްވަރި</option><option value="255">ރ. އަލިފުށި</option><option value="258">ރ. މީދޫ</option><option value="259">ރ. ވާދޫ</option><option value="273">ރ. ކަނދޮޅުދޫ</option><option value="282">ރ. ފައިނު</option><option value="291">ރ. އިނގުރައިދޫ</option><option value="295">ރ. އުނގޫފާރު</option><option value="297">ބ. ފުޅަދޫ</option><option value="299">ބ. ކުޑަރިކިލު</option><option value="309">ބ. އޭދަފުށި</option><option value="315">ބ. ދޮންފަނު</option><option value="317">ބ. ކިހާދޫ</option><option value="326">ބ. ކަމަދޫ</option><option value="327">ބ. ފެހެންދޫ</option><option value="336">ބ. މާޅޮސް</option><option value="339">ބ. ކެންދޫ</option><option value="341">ބ. ތުޅާދޫ</option><option value="350" selected>ބ. ދަރަވަންދޫ</option><option value="355">ބ. ގޮއިދޫ</option><option value="362">ބ. ހިތާދޫ</option><option value="376">ޅ. ނައިފަރު</option><option value="393">ޅ. ހިންނަވަރު</option><option value="401">ޅ. ކުރެންދޫ</option><option value="402">ޅ. އޮޅުވެލިފުށި</option><option value="443">ކ. މާފުށި</option><option value="480">ކ. މާލެ</option><option value="493">ކ. ގުޅި</option><option value="503">ކ. ކާށިދޫ</option><option value="504">ކ. ހުރާ</option><option value="510">ކ. ގުރައިދޫ</option><option value="511">ކ. ތުލުސްދޫ</option><option value="521">ކ. ގާފަރު</option><option value="524">ކ. ދިއްފުށި</option><option value="537">ކ. ހިންމަފުށި</option><option value="544">އއ. މާޅޮސް</option><option value="548">އއ. މަތިވެރި</option><option value="551">އއ. ރަސްދޫ</option><option value="552">އއ. ފެރިދޫ</option><option value="559">އއ. ބޮޑުފޮޅުދޫ</option><option value="560">އއ. ތޮއްޑޫ</option><option value="568">އއ. ހިމެންދޫ</option><option value="571">އއ. އުކުޅަސް</option><option value="581">އދ. އޮމަދޫ</option><option value="587">އދ. މާމިގިލި</option><option value="589">އދ. މަންދޫ</option><option value="596">އދ. ދަނގެތި</option><option value="604">އދ. ދިއްދޫ</option><option value="606">އދ. ފެންފުށި</option><option value="608">އދ. މަހިބަދޫ</option><option value="616">އދ. ކުނބުރުދޫ</option><option value="626">އދ. ހަންޏާމީދޫ</option><option value="627">އދ. ދިގުރަށް</option><option value="638">ވ. ފެލިދޫ</option><option value="642">ވ. ފުލިދޫ</option><option value="643">ވ. ކެޔޮދޫ</option><option value="645">ވ. ރަކީދޫ</option><option value="652">ވ. ތިނަދޫ</option><option value="658">މ. ކޮޅުފުށި</option><option value="661">މ. ދިއްގަރު</option><option value="671">މ. މުލި</option><option value="674">މ. މުލައް</option><option value="684">މ. މަޑިފުށި</option><option value="685">މ. ރަތްމަންދޫ</option><option value="686">މ. ނާލާފުށި</option><option value="707">މ. މަޑުއްވަރި</option><option value="708">މ. ވޭވަށް</option><option value="711">ފ. ފީއަލި</option><option value="714">ފ. މަގޫދޫ</option><option value="718">ފ. ބިލެތްދޫ</option><option value="724">ފ. ދަރަނބޫދޫ</option><option value="730">ފ. ނިލަންދޫ</option><option value="732">ދ. ވާނި</option><option value="734">ދ. ބަނޑިދޫ</option><option value="741">ދ. މާއެނބޫދޫ</option><option value="744">ދ. ރިނބުދޫ</option><option value="751">ދ. ކުޑަހުވަދޫ</option><option value="753">ދ. ގެމެންދޫ</option><option value="760">ދ. ހުޅުދެލި</option><option value="778">ދ. މީދޫ</option><option value="789">ތ. ތިމަރަފުށި</option><option value="797">ތ. ދިޔަމިގިލި</option><option value="798">ތ. ވިލުފުށި</option><option value="800">ތ. ބުރުނި</option><option value="802">ތ. ހިރިލަންދޫ</option><option value="805">ތ. ކިނބިދޫ</option><option value="806">ތ. ގާދިއްފުށި</option><option value="810">ތ. ކަނޑޫދޫ</option><option value="817">ތ. މަޑިފުށި</option><option value="820">ތ. ވޭމަންޑޫ</option><option value="823">ތ. އޮމަދޫ</option><option value="829">ތ. ވަންދޫ</option><option value="845">ތ. ގުރައިދޫ</option><option value="848">ލ. ކަޅައިދޫ</option><option value="856">ލ. މުންޑޫ</option><option value="858">ލ. ގަން</option><option value="865">ލ. ގާދޫ</option><option value="866">ލ. ހިތަދޫ</option><option value="870">ލ. ކުނަހަންދޫ</option><option value="879">ލ. މާމެންދޫ</option><option value="901">ލ. މާވަށް</option><option value="913">ލ. ފޮނަދޫ</option><option value="915">ލ. ދަނބިދޫ</option><option value="916">ލ. މާބައިދޫ</option><option value="918">ލ. އިސްދޫ</option><option value="947">ގއ. ވިލިނގިލި</option><option value="957">ގއ. ދެއްވަދޫ</option><option value="959">ގއ. ކޮނޑޭ</option><option value="966">ގއ. ދިޔަދޫ</option><option value="980">ގއ. ކޮލަމާފުށި</option><option value="982">ގއ. ދާންދޫ</option><option value="992">ގއ. ކަނޑުހުޅުދޫ</option><option value="1008">ގއ. މާމެންދޫ</option><option value="1010">ގއ. ނިލަންދޫ</option><option value="1015">ގއ. ގެމަނަފުށި</option><option value="1032">ގދ. ނަޑައްލާ</option><option value="1033">ގދ. ވާދޫ</option><option value="1073">ގދ. ފިޔޯރީ</option><option value="1084">ގދ. މަޑަވެލި</option><option value="1087">ގދ. ފަރެސްމާތޮޑާ</option><option value="1095">ގދ. ރަތަފަންދޫ</option><option value="1107">ގދ. ތިނަދޫ</option><option value="1131">ގދ. ހޯނޑެއްދޫ</option><option value="1136">ގދ. ގައްދޫ</option><option value="1169">ޏ. ފުވައްމުލައް</option><option value="1172">ސ. މަރަދޫފޭދޫ</option><option value="1177">ސ. މީދޫ</option><option value="1178">ސ. މަރަދޫ</option><option value="1179">ސ. ހުޅުދޫ</option><option value="1196">ސ. ފޭދޫ</option><option value="1200">ސ. ހިތަދޫ</option>  </select>
+  <script>
+$(function()
+{
+   $("select#location").select2(
+   {
+      escapeMarkup: function(m)
+      {
+         return m;
+      }
+   }
+   );
+   addDVkbd(".select2-input");
+
+   var date = new Date();
+   $.cookie("iid", "350",{expires: 365, path: '/'});
+   addDVkbd("#search-text");
+}
+);
+</script>
+ </td></tr><tr><td style="color: #FF0000">އިމްސާކް</td><td align='left'>04:22</td></tr><tr><td>ފަތިސް</td><td align='left'>04:42</td></tr><tr><td>އިރުއަރާ</td><td align='left'>05:55</td></tr><tr><td>މެންދުރު</td><td align='left'>12:10</td></tr><tr><td>އަޞްރު</td><td align='left'>15:23</td></tr><tr><td style="color: #FF0000">އިރުއޮއްސޭ</td><td align='left'>18:16</td></tr><tr><td>ޢިޝާ</td><td align='left'>19:30</td></tr></table>
+</body>
+</html>

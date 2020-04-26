@@ -1,0 +1,128 @@
+html, body{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+
+#button-wrapper{
+	width: 100%;
+	display:flex;
+	justify-content: space-around;
+	padding: 20px 0px;
+}
+
+
+iframe{
+  position:relative;
+  top:0px;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+
+#iFrameWrapper{
+	width: 100%;
+	height: 100%;
+	flex: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.button{
+		text-decoration: none;
+/* 			text-transform: uppercase; */
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+		padding: 13px;
+		border: 1px solid grey;
+		border-radius: 7px;
+		text-align: center;
+		margin: 5px;
+		display: flex;
+		align-items:center;
+		background: #f8f8f8;
+		cursor: pointer;
+
+	}
+
+@media (max-width: 992px) {
+	#hadith-iframe{
+		top: -150px;
+		left: -150px;
+		width: calc(100% + 150px);
+		height: calc(100% + 150px);
+	}
+}
+
+@media (max-width: 430px){
+	#hadith-iframe{
+		color: green;
+		top: -150px;
+		left: -210px;
+		width: calc(100% + 210px);
+		height: calc(100% + 150px);
+	}
+}
+
+
+@media (min-width: 992px){
+ .button{
+		padding: 10px;
+		margin: 8px;
+	}
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+  html, body{
+    background-color: #faf3f2;
+  }
+
+  #button-wrapper{
+    background-color: #0e1b1e;
+  }
+
+  .button{
+    border: 1px solid rgb(233, 233, 233);
+    background: rgb(15, 25, 31);
+	color: white;
+  }
+
+  a{
+      text-decoration: underline;
+	  color: white;
+
+  }
+
+  a:link {
+    color: white;
+  }
+
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: rgb(224, 224, 224);
+  }
+
+  /* selected link */
+  a:active {
+    color: rgb(202, 202, 202);
+  }
+
+  #iFrameWrapper{
+	mix-blend-mode: difference;
+  }
+
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hadith Nawawi</title>
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-title" content="Hadith">
+    <meta name="apple-mobile-web-app-status-bar-style" content="translucent black" />
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144-precomposed.png">
+    <link rel="stylesheet" type="text/css" href="../styling.css">
+
+  </head>
+<body>
+  <script src="fbq.js"></script>
+
+  <div id="button-wrapper">
+		<a class="button" onclick="_decrementButtons()" id="previous_hadtih" target="quran-iframe">Read Previous Hadtih</a>
+		<a class="button" onclick="_incrementButtons()" id="next_hadith" target="quran-iframe">Read Next Hadtih</a>
+  </div>
+
+	<div id="iFrameWrapper">
+        <iframe id="hadith-iframe" src="https://sunnah.com/nawawi40/" frameborder="0" scrolling="yes"></iframe>
+	</div>
+
+</body>
+<!-- Doesn't work because of CORS -->
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        var myIframe = document.querySelector("#hadith-iframe");
+        myIframe.addEventListener("load", function() {
+            this.contentWindow.scrollBy(1000,100000)
+        });
+    })
+</script> -->
+</html>
