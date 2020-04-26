@@ -20,7 +20,7 @@ let timer = function () {
     return new Promise(function (resolve, reject) {
         var cMonth = (new Date()).getMonth();
         console.log(cMonth)
-        fetch(`https://api.aladhan.com/v1/calendar?latitude=24.946218&longitude=67.005615&method=2&month=${cMonth+1}&year=2020`)
+        fetch(`https://api.aladhan.com/v1/calendar?latitude=5.15499938N&longitude=73.1249995&method=2&month=${cMonth+1}&year=2020`)
             .then(function (res) { return res.json() })
             .then(function (res) {
                 let namazTime = res.data[((new Date()).getDate()) + 1].timings.Fajr;
@@ -34,7 +34,7 @@ let timer = function () {
                 console.log(fajrTime)
                 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec "];
                 var nowMonth = months[(new Date()).getMonth()];
-                countDownDate = new Date(`${nowMonth} ${(new Date().getDate()) + 1}, 2018 ${fajrTime}`);
+                countDownDate = new Date(`${nowMonth} ${(new Date().getDate()) + 1}, 2020 ${fajrTime}`);
 
 
                 //===============================================
@@ -50,7 +50,7 @@ let timer = function () {
                 var magghribTime = namazTimeInMili2 + ":" + n2 + ":00";
                 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec "];
                 var nowMonth = months[(new Date()).getMonth()];
-                countDownDate2 = new Date(`${nowMonth} ${(new Date().getDate()) + 1}, 2018 ${magghribTime}`)
+                countDownDate2 = new Date(`${nowMonth} ${(new Date().getDate()) + 1}, 2020 ${magghribTime}`)
                 resolve([countDownDate , countDownDate2,res])
             }).catch(function (err) {
                 reject(err)
@@ -115,7 +115,7 @@ let search = function () {
     return new Promise(function (resolve, reject) {
         var cMonth = document.getElementById("month").selectedIndex;
         console.log("cMonth ======" + cMonth)
-        fetch(`https://api.aladhan.com/v1/calendar?latitude=24.946218&longitude=67.005615&method=2&month=${cMonth}&year=2018`)
+        fetch(`https://api.aladhan.com/v1/calendar?latitude=5.15499938&longitude=73.1249995&method=2&month=${cMonth}&year=2018`)
             .then(function (res) { return res.json() })
             .then(function (res) {
                 resolve([res, cMonth])
